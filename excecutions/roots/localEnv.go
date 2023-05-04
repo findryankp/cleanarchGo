@@ -6,18 +6,17 @@ import (
 	"github.com/Findryankp/cleanarchGo/excecutions/generates"
 )
 
-func envCreate(featuresName string) {
-	base := "./" + featuresName
-	file, err := generates.FilesCreate(base + "/local.env")
+func envCreate() {
+	file, err := generates.FilesCreate("./local.env")
 	if err != nil {
 		fmt.Println(err.Error())
 	} else {
-		generates.FilesAddContent(file, envContent(featuresName))
+		generates.FilesAddContent(file, envContent())
 		fmt.Println("Env File Created")
 	}
 }
 
-func envContent(featuresName string) string {
+func envContent() string {
 	var text = `
 #mysql database
 DBUSERNAME=findryankp

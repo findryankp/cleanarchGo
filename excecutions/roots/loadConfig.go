@@ -6,18 +6,17 @@ import (
 	"github.com/Findryankp/cleanarchGo/excecutions/generates"
 )
 
-func loadConfigCreate(featuresName string) {
-	base := "./" + featuresName
-	file, err := generates.FilesCreate(base + "/loadConfig.go")
+func loadConfigCreate() {
+	file, err := generates.FilesCreate("./loadConfig.go")
 	if err != nil {
 		fmt.Println(err.Error())
 	} else {
-		generates.FilesAddContent(file, loadConfigContent(featuresName))
+		generates.FilesAddContent(file, loadConfigContent())
 		fmt.Println("loadConfig File Created")
 	}
 }
 
-func loadConfigContent(featuresName string) string {
+func loadConfigContent() string {
 	var text = `package main
 
 import (

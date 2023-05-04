@@ -2,11 +2,11 @@ package roots
 
 import "github.com/Findryankp/cleanarchGo/excecutions/generates"
 
-func InitRoots(featuresName string) {
-	dockerCreate(featuresName)
-	gitigonreCreate(featuresName)
-	envCreate(featuresName)
-	loadConfigCreate(featuresName)
+func InitRoots() {
+	dockerCreate()
+	gitigonreCreate()
+	envCreate()
+	loadConfigCreate()
 	mainAdd()
 }
 

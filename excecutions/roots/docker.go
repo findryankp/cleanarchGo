@@ -6,18 +6,17 @@ import (
 	"github.com/Findryankp/cleanarchGo/excecutions/generates"
 )
 
-func dockerCreate(featuresName string) {
-	base := "./" + featuresName
-	file, err := generates.FilesCreate(base + "/Dockerfile")
+func dockerCreate() {
+	file, err := generates.FilesCreate("./Dockerfile")
 	if err != nil {
 		fmt.Println(err.Error())
 	} else {
-		generates.FilesAddContent(file, dockerContent(featuresName))
+		generates.FilesAddContent(file, dockerContent())
 		fmt.Println("Docker File Created")
 	}
 }
 
-func dockerContent(featuresName string) string {
+func dockerContent() string {
 	var text = `FROM golang:1.20-alpine
 
 # membuat direktory app
@@ -33,10 +32,10 @@ RUN go mod tidy
 EXPOSE 8080
 
 # create executable
-RUN go build -o ` + featuresName + `
+RUN go build -o ` + generates.ModuleName + `
 
 # menjalankan file executablenya
-CMD ["./` + featuresName + `"]
+CMD ["./` + generates.ModuleName + `"]
 	`
 
 	return text
