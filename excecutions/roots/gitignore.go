@@ -13,7 +13,7 @@ func gitigonreCreate(featuresName string) {
 		fmt.Println(err.Error())
 	} else {
 		generates.FilesAddContent(file, gitigonreContent(featuresName))
-		fmt.Println("Config File Created")
+		fmt.Println("Gitignore File Created")
 	}
 }
 

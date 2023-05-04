@@ -13,7 +13,7 @@ func dockerCreate(featuresName string) {
 		fmt.Println(err.Error())
 	} else {
 		generates.FilesAddContent(file, dockerContent(featuresName))
-		fmt.Println("Config File Created")
+		fmt.Println("Docker File Created")
 	}
 }
 
