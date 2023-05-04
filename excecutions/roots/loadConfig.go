@@ -28,14 +28,14 @@ import (
 	"github.com/labstack/echo/v4"
 )
 
-func loadConfigs() {
+func loadConfigs(port string) {
 	cfg := configs.InitConfig()
 	db := database.InitDBMysql(*cfg)
 	database.InitMigration(db)
 
 	e := echo.New()
 	routes.InitRouter(db, e)
-	e.Logger.Fatal(e.Start(":8080"))
+	e.Logger.Fatal(e.Start(port))
 }	
 `
 	return text
