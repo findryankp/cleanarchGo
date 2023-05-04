@@ -1,6 +1,7 @@
 package features
 
 import (
+	"github.com/Findryankp/cleanarchGo/excecutions/features/additions"
 	"github.com/Findryankp/cleanarchGo/excecutions/features/data"
 	"github.com/Findryankp/cleanarchGo/excecutions/features/delivery"
 	"github.com/Findryankp/cleanarchGo/excecutions/features/service"
@@ -14,6 +15,7 @@ func InitFeatures(featureName string) {
 	data.InitData(featureName)
 	delivery.InitDelivery(featureName)
 	service.InitService(featureName)
+	additions.InitAdditions(featureName)
 }
 
 func createFolderFeature(featuresName string) {
