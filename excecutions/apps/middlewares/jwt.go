@@ -20,7 +20,7 @@ func jwtContent() string {
 	var text = `package middlewares
 
 import (
-	"cleanarc/apps/configs"
+	"` + generates.ModuleName + `/apps/configs"
 	"errors"
 	"strings"
 	"time"
@@ -31,8 +31,8 @@ import (
 )
 
 type JwtCustomClaims struct {
-	Id   int    ` + "`json:" + `id"` + "`" + `
-	Role string ` + "`json:" + `role"` + "`" + `
+	Id   int    ` + "`json:" + `"id"` + "`" + `
+	Role string ` + "`json:" + `"role"` + "`" + `
 	jwt.RegisteredClaims
 }
 

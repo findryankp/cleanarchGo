@@ -29,7 +29,7 @@ func requestContent(featuresName string) string {
 import "` + generates.ModuleName + `/features/` + featuresName + `"
 
 type Request struct {
-	` + TitleCase + ` string ` + "`json:" + featuresName + `"` + "` " + "`form:" + featuresName + `"` + "`" + `
+	` + TitleCase + ` string ` + `"` + "`json:" + featuresName + `"` + "` " + "`form:" + `"` + featuresName + `"` + "`" + `
 }
 
 func RequestToCore(request *Request) ` + featuresName + `.Core {

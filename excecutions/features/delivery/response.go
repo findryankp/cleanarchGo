@@ -29,8 +29,8 @@ func responseContent(featuresName string) string {
 import "` + generates.ModuleName + `/features/` + featuresName + `"
 
 type Response struct {
-	Id       uint   ` + "`json:" + `id"` + "`" + `
-	` + TitleCase + ` string ` + "`json:" + `id"` + "`" + `
+	Id       uint   ` + "`json:" + `"id"` + "`" + `
+	` + TitleCase + ` string ` + "`json:" + `"` + featuresName + `"` + "`" + `
 }
 
 func CoreToResponse(dataCore ` + featuresName + `.Core) Response {
