@@ -8,7 +8,7 @@ import (
 	"github.com/Findryankp/cleanarchGo/excecutions/utils"
 )
 
-func InitExecution() {
+func CommandInit() {
 	generates.InitModule()
 	apps.InitApps()
 	utils.InitUtils()
