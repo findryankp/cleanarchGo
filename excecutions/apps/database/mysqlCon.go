@@ -3,6 +3,7 @@ package database
 import (
 	"fmt"
 
+	"github.com/Findryankp/cleanarchGo/excecutions"
 	"github.com/Findryankp/cleanarchGo/excecutions/generates"
 )
 
@@ -12,25 +13,32 @@ func mysqlConCreate() {
 		fmt.Println(err.Error())
 	} else {
 		generates.FilesAddContent(file, mysqlConContent())
-		fmt.Println("Config File Created")
+		fmt.Println("mysqlCon File Created")
 	}
 }
 
 func mysqlConContent() string {
-	var text = `package configs
-	
-type AppConfig struct {
-	DBUSERNAME string
-	DBPASS     string
-	DBHOST     string
-	DBPORT     string
-	DBNAME     string
-	JWTKEY     string
-}
+	var text = `package database
 
-func InitConfig() *AppConfig {
-	return InitEnv()
+import (
+	"` + excecutions.ModuleName + `/apps/configs"
+	"fmt"
+
+	"gorm.io/driver/mysql"
+	"gorm.io/gorm"
+)
+
+func InitDBMysql(app configs.AppConfig) *gorm.DB {
+	URL := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s?charset=utf8&parseTime=True&loc=Local", app.DBUSERNAME, app.DBPASS, app.DBHOST, app.DBPORT, app.DBNAME)
+
+	DB, err := gorm.Open(mysql.Open(URL), &gorm.Config{})
+	if err != nil {
+		panic(err.Error())
+	}
+
+	return DB
 }
+	
 	`
 
 	return text
