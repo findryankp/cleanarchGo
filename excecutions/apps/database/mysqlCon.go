@@ -1,4 +1,4 @@
-package configs
+package database
 
 import (
 	"fmt"
@@ -6,17 +6,17 @@ import (
 	"github.com/Findryankp/cleanarchGo/excecutions/generates"
 )
 
-func configCreate() {
-	file, err := generates.FilesCreate("./apps/configs/config.go")
+func mysqlConCreate() {
+	file, err := generates.FilesCreate("./apps/database/mysqlCon.go")
 	if err != nil {
 		fmt.Println(err.Error())
 	} else {
-		generates.FilesAddContent(file, configContent())
+		generates.FilesAddContent(file, mysqlConContent())
 		fmt.Println("Config File Created")
 	}
 }
 
-func configContent() string {
+func mysqlConContent() string {
 	var text = `package configs
 	
 type AppConfig struct {

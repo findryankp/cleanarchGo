@@ -9,6 +9,6 @@ func InitConfig() {
 	generates.PackageIntallList(packagesInstall)
 
 	//generate file
-	ConfigCreate()
-	ConfigEnvCreate()
+	configCreate()
+	configEnvCreate()
 }

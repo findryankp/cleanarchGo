@@ -6,17 +6,17 @@ import (
 	"github.com/Findryankp/cleanarchGo/excecutions/generates"
 )
 
-func ConfigEnvCreate() {
+func configEnvCreate() {
 	file, err := generates.FilesCreate("./apps/configs/environment.go")
 	if err != nil {
 		fmt.Println(err.Error())
 	} else {
-		generates.FilesAddContent(file, ConfigEnvContent())
+		generates.FilesAddContent(file, configEnvContent())
 		fmt.Println("Config Env File Created")
 	}
 }
 
-func ConfigEnvContent() string {
+func configEnvContent() string {
 	var text = `package configs
 
 import (
