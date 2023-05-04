@@ -1,7 +1,6 @@
 package data
 
-func InitData() {
-	featuresName := ""
+func InitData(featuresName string) {
 	modelCreate(featuresName)
 	queryCreate(featuresName)
 }
