@@ -5,11 +5,11 @@ import (
 )
 
 func InitFeatures(featureName string) {
-	CreateFolderFeature(featureName)
+	createFolderFeature(featureName)
 	entityCreate(featureName)
 }
 
-func CreateFolderFeature(featuresName string) {
+func createFolderFeature(featuresName string) {
 	base := "./features/" + featuresName
 	folderName := []string{
 		base,
