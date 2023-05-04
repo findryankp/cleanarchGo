@@ -25,7 +25,6 @@ func mainContent() string {
 
 	//run on port 8080
 	loadConfigs(":8080")
-}
 `
 	return text
 }

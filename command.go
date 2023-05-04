@@ -49,7 +49,11 @@ func CommandFeature(arg []string) {
 	if len(arg) != 3 {
 		fmt.Println("wrong argument")
 	} else {
-		excecutions.NewFeatures(arg[2])
+		if arg[2][0] >= 97 && arg[2][0] <= 122 {
+			excecutions.NewFeatures(arg[2])
+		} else {
+			fmt.Println("make feature with lowercase first")
+		}
 	}
 }
 

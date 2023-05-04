@@ -9,13 +9,14 @@ import (
 )
 
 func CommandInit() {
-	generates.FolderInit()
 	generates.InitModule()
+	generates.FolderInit()
 	apps.InitApps()
 	utils.InitUtils()
 	roots.InitRoots()
 }
 
 func NewFeatures(featuresName string) {
+	generates.InitModule()
 	features.InitFeatures(featuresName)
 }

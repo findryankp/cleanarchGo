@@ -2,8 +2,6 @@ package delivery
 
 import (
 	"fmt"
-	"strings"
-	"unicode"
 
 	"github.com/Findryankp/cleanarchGo/excecutions/generates"
 )
@@ -20,16 +18,14 @@ func requestCreate(featuresName string) {
 }
 
 func requestContent(featuresName string) string {
-	TitleCase := strings.Map(func(r rune) rune {
-		return unicode.ToUpper(r)
-	}, featuresName)
+	TitleCase := generates.ToTitle(featuresName)
 
 	var text = `package delivery
 
 import "` + generates.ModuleName + `/features/` + featuresName + `"
 
 type Request struct {
-	` + TitleCase + ` string ` + `"` + "`json:" + featuresName + `"` + "` " + "`form:" + `"` + featuresName + `"` + "`" + `
+	` + TitleCase + ` string ` + "`json:" + `"` + featuresName + `" ` + "form:" + `"` + featuresName + `"` + "`" + `
 }
 
 func RequestToCore(request *Request) ` + featuresName + `.Core {

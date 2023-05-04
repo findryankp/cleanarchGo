@@ -2,8 +2,6 @@ package features
 
 import (
 	"fmt"
-	"strings"
-	"unicode"
 
 	"github.com/Findryankp/cleanarchGo/excecutions/generates"
 )
@@ -20,9 +18,7 @@ func entityCreate(featuresName string) {
 }
 
 func entityContent(featuresName string) string {
-	titleCase := strings.Map(func(r rune) rune {
-		return unicode.ToUpper(r)
-	}, featuresName)
+	TitleCase := generates.ToTitle(featuresName)
 
 	var text = `package ` + featuresName + `
 
@@ -30,7 +26,7 @@ import "time"
 
 type Core struct {
 	Id        uint
-	` + titleCase + `  string ` + "`validate:" + `"required"` + "`" + `
+	` + TitleCase + `  string ` + "`validate:" + `"required"` + "`" + `
 	CreatedAt time.Time
 	UpdatedAt time.Time
 }

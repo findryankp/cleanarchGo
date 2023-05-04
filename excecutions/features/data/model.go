@@ -2,8 +2,6 @@ package data
 
 import (
 	"fmt"
-	"strings"
-	"unicode"
 
 	"github.com/Findryankp/cleanarchGo/excecutions/generates"
 )
@@ -20,9 +18,7 @@ func modelCreate(featuresName string) {
 }
 
 func modelContent(featuresName string) string {
-	TitleCase := strings.Map(func(r rune) rune {
-		return unicode.ToUpper(r)
-	}, featuresName)
+	TitleCase := generates.ToTitle(featuresName)
 
 	var text = `package data
 
