@@ -3,7 +3,6 @@ package middlewares
 import (
 	"fmt"
 
-	"github.com/Findryankp/cleanarchGo/excecutions"
 	"github.com/Findryankp/cleanarchGo/excecutions/generates"
 )
 
@@ -21,7 +20,7 @@ func authenticationContent() string {
 	var text = `package middlewares
 
 import (
-	"` + excecutions.ModuleName + `/utils/helpers"
+	"` + generates.ModuleName + `/utils/helpers"
 	"net/http"
 
 	"github.com/labstack/echo/v4"

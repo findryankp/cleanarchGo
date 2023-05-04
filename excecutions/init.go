@@ -1,10 +1,13 @@
 package excecutions
 
-import "github.com/Findryankp/cleanarchGo/excecutions/generates"
+import (
+	"github.com/Findryankp/cleanarchGo/excecutions/apps"
+	"github.com/Findryankp/cleanarchGo/excecutions/generates"
+	"github.com/Findryankp/cleanarchGo/excecutions/utils"
+)
 
-var ModuleName string
-
-func InitExcecution() {
-	moduleName, _ := generates.ModuleNameGet()
-	ModuleName = moduleName
+func InitExecution() {
+	generates.InitModule()
+	apps.InitApps()
+	utils.InitUtils()
 }

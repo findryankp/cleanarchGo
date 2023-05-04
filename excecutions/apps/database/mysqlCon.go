@@ -3,7 +3,6 @@ package database
 import (
 	"fmt"
 
-	"github.com/Findryankp/cleanarchGo/excecutions"
 	"github.com/Findryankp/cleanarchGo/excecutions/generates"
 )
 
@@ -21,7 +20,7 @@ func mysqlConContent() string {
 	var text = `package database
 
 import (
-	"` + excecutions.ModuleName + `/apps/configs"
+	"` + generates.ModuleName + `/apps/configs"
 	"fmt"
 
 	"gorm.io/driver/mysql"

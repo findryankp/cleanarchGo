@@ -9,6 +9,13 @@ import (
 	"strings"
 )
 
+var ModuleName string
+
+func InitModule() {
+	moduleName, _ := ModuleNameGet()
+	ModuleName = moduleName
+}
+
 func ModuleNameGet() (string, error) {
 	file, err := os.Open("go.mod")
 	if err != nil {

@@ -3,7 +3,6 @@ package routes
 import (
 	"fmt"
 
-	"github.com/Findryankp/cleanarchGo/excecutions"
 	"github.com/Findryankp/cleanarchGo/excecutions/generates"
 )
 
@@ -21,8 +20,8 @@ func routesContent() string {
 	var text = `package routes
 
 import (
-	"` + excecutions.ModuleName + `/apps/middlewares"
-	"` + excecutions.ModuleName + `/utils/helpers"
+	"` + generates.ModuleName + `/apps/middlewares"
+	"` + generates.ModuleName + `/utils/helpers"
 	"net/http"
 
 	"github.com/labstack/echo/v4"
