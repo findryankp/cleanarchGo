@@ -54,7 +54,7 @@ go run . features featuresNames
 ```
 ex : go run . features room
 
-* CRUD controller, model, route, and migratiton feature from your FeatureNames will be created
+* All layer, route, and migratiton feature from your featureNames will be created
 <div align="left">
   <a href="https://github.com/othneildrew/Best-README-Template">
     <img src="images/03.png" alt="Logo" height="180" width="400">
