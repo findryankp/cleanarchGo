@@ -9,6 +9,7 @@ import (
 )
 
 func CommandInit() {
+	generates.FolderInit()
 	generates.InitModule()
 	apps.InitApps()
 	utils.InitUtils()
