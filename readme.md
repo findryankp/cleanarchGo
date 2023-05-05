@@ -25,7 +25,7 @@ for example :
 <br/>
 <div align="left">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/01.png" alt="Logo" height="200" width="400">
+    <img src="images/01.png" alt="Logo" width="60%">
   </a>
 </div>
 
@@ -50,7 +50,7 @@ go run . init
 
 <div align="left">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/04.png" alt="Logo" height="150" width="300">
+    <img src="images/04.png" alt="Logo" width="60%">
   </a>
 </div>
 
