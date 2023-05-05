@@ -21,7 +21,7 @@ go get -u github.com/Findryankp/cleanarchGo@latest
 ```go
 cleanarchGo.Init();
 ```
-for example :
+* for example :
 <br/>
 <div align="left">
   <a href="https://github.com/othneildrew/Best-README-Template">
@@ -46,7 +46,7 @@ go run . init
 </div>  
 <br/>
 
-4. Set .env with your own configuration database
+4. Set `.env` with your own configuration database
 
 <div align="left">
   <a href="https://github.com/othneildrew/Best-README-Template">
@@ -59,7 +59,7 @@ run this syntax in your cmd/terminal
 ```shell
 go run . features featuresNames
 ```
-ex : go run . features room
+* ex : `go run . features room`
 
 * CRUD Features, Code all layer, route, and migratiton feature from your featureNames will be created
 <div align="left">
