@@ -10,7 +10,7 @@ go get -u github.com/Findryankp/cleanarchGo@latest
 ```
 
 ## Step By Step
-1. First step, add this go syntax to your **main** function
+1. First step, add this syntax to your **main** function
 ```go
 cleanarchGo.Init();
 ```
@@ -66,7 +66,7 @@ ex : go run . features room
 go run .
 ```
 
-try it with your postman or another
+try with your postman or another
 <div align="left">
   <a href="https://github.com/othneildrew/Best-README-Template">
     <img src="images/05.png" alt="Logo" height="200" width="410">
