@@ -22,7 +22,6 @@ go get -u github.com/Findryankp/cleanarchGo@latest
 cleanarchGo.Init();
 ```
 * for example :
-<br/>
 <div align="left">
   <a href="https://github.com/othneildrew/Best-README-Template">
     <img src="images/01.png" alt="Logo" width="60%">
@@ -47,7 +46,6 @@ go run . init
 <br/>
 
 4. Set `.env` with your own configuration database
-
 <div align="left">
   <a href="https://github.com/othneildrew/Best-README-Template">
     <img src="images/04.png" alt="Logo" width="60%">
@@ -59,12 +57,12 @@ run this syntax in your cmd/terminal
 ```shell
 go run . features featuresNames
 ```
-* ex : `go run . features room`
+* ex : `go run . features rooms`
 
 * CRUD Features, Code all layer, route, and migratiton feature from your featureNames will be created
 <div align="left">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/03.png" alt="Logo" width="30%">
+    <img src="images/03.png" alt="Logo" width="20%">
   </a>
 </div>
 
@@ -73,7 +71,7 @@ go run . features featuresNames
 go run .
 ```
 
-try with your postman or another
+* try with your postman or another
 <div align="left">
   <a href="https://github.com/othneildrew/Best-README-Template">
     <img src="images/05.png" alt="Logo" width="60%">
