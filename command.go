@@ -1,4 +1,4 @@
-package main
+package cleanarchGo
 
 import (
 	"errors"
@@ -6,6 +6,7 @@ import (
 	"os"
 
 	"github.com/Findryankp/cleanarchGo/excecutions"
+	"github.com/Findryankp/cleanarchGo/excecutions/commands"
 )
 
 func Init() error {
@@ -32,8 +33,7 @@ func Command(argsRaw []string) {
 	}
 
 	if !flag {
-		fmt.Println(`1. "init" for init project`)
-		fmt.Println(`2. "features or -f" for create feature`)
+		commands.Menu()
 	}
 }
 
@@ -50,7 +50,9 @@ func CommandFeature(arg []string) {
 		fmt.Println("wrong argument")
 	} else {
 		if arg[2][0] >= 97 && arg[2][0] <= 122 {
+			commands.Loading()
 			excecutions.NewFeatures(arg[2])
+			commands.Feature()
 		} else {
 			fmt.Println("make feature with lowercase first")
 		}
@@ -58,5 +60,7 @@ func CommandFeature(arg []string) {
 }
 
 func CommandInit() {
+	commands.Loading()
 	excecutions.CommandInit()
+	commands.Init()
 }

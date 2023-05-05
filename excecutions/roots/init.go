@@ -17,7 +17,6 @@ func mainAdd() {
 
 func mainContent() string {
 	var text = `	if err := cleanarchGo.Init(); err != nil {
-		fmt.Println(err)
 		return
 	}
 
