@@ -11,7 +11,6 @@ func InitRoots() {
 }
 
 func mainAdd() {
-	generates.PackageIntall("")
 	line := generates.ContentGetLinenumber("./main.go", "cleanarchGo.Init()")
 	generates.ContentInsertAtLinenumber("./main.go", mainContent(), line-1)
 }
