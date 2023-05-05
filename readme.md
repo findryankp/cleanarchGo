@@ -53,7 +53,7 @@ go run . init
 </div>
 
 ## 🚀 Create new feature
-run this syntax in your cmd/terminal
+* run this syntax in your cmd/terminal
 ```shell
 go run . features featuresNames
 ```
