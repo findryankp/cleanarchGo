@@ -1,8 +1,10 @@
 package main
 
+import "fmt"
+
 func main() {
-	Init()
-	//cleanarchGo.Init()
-	// str := strings.Title(strings.ToLower("products"))
-	// fmt.Println(str)
+	if err := Init(); err != nil {
+		fmt.Println(err)
+		return
+	}
 }

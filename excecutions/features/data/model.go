@@ -13,7 +13,7 @@ func modelCreate(featuresName string) {
 		fmt.Println(err.Error())
 	} else {
 		generates.FilesAddContent(file, modelContent(featuresName))
-		fmt.Println("Config File Created")
+		fmt.Println("Model File Created")
 	}
 }
 

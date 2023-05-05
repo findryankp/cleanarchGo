@@ -12,7 +12,10 @@ go get -u github.com/Findryankp/cleanarchGo@latest
 ## Step By Step
 1. First step, add this go syntax to your **main** function
 ```go
-cleanarchGo.Init()
+if err := cleanarchGo.Init(); err != nil {
+  fmt.Println(err)
+  return
+}
 ```
 for example :
 <br/>
