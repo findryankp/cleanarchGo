@@ -1,6 +1,6 @@
 # cleanarchGo
 Feature creation to make it faster and easier.
-* Clean Architecture with Echo framework, Gorm, etc.
+* Clean Architecture with Echo framework, Gorm, Viper (env), Govalidator, Jwt, etc.
 * Make CRUD new feature less than 1 minutes.
 * Dockerfile will be generated too.
 
