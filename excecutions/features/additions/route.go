@@ -15,6 +15,12 @@ func routeCreate(featuresName string) {
 		generates.FilesAddContent(file, routeContent(featuresName))
 		fmt.Println("Request File Created")
 	}
+
+	lineNumber := generates.ContentGetLinenumber("./apps/routes/routes.go", `func InitRouter(db *gorm.DB, e *echo.Echo)`)
+
+	generates.ContentInsertAtLinenumber("./apps/routes/routes.go", `func InitRouter(db *gorm.DB, e *echo.Echo){`+"\n"+`	`+featuresName+"Router(e)", lineNumber-1)
+
+	fmt.Println("Routes successfully created")
 }
 
 func routeContent(featuresName string) string {
