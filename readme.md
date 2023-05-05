@@ -39,7 +39,7 @@ go run . init
 </div>  
 <br/>
 
-1. Set .env with your own configuration database
+4. Set .env with your own configuration database
 
 <div align="left">
   <a href="https://github.com/othneildrew/Best-README-Template">
