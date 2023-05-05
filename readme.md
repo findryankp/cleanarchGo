@@ -46,7 +46,7 @@ go run . init
 
 <div align="left">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/env.png" alt="Logo" height="150" width="300">
+    <img src="images/04.png" alt="Logo" height="150" width="300">
   </a>
 </div>
 
@@ -60,7 +60,7 @@ ex : go run . features room
 * All layer, route, and migratiton feature from your featureNames will be created
 <div align="left">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/03.png" alt="Logo" height="180" width="400">
+    <img src="images/03.png" alt="Logo" height="300" width="300">
   </a>
 </div>
 
