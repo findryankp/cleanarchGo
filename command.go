@@ -1,4 +1,4 @@
-package cleanarchGo
+package main
 
 import (
 	"errors"
