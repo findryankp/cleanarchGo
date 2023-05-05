@@ -1,5 +1,5 @@
 # cleanarchGo
-Feature creation to make it faster and easier.
+Clean architecture starter pack for feature creation to make it faster and easier with Go.
 * Clean Architecture with Echo framework, Gorm, Viper (env), Govalidator, Jwt, etc.
 * Make CRUD new feature less than 1 minutes.
 * Dockerfile will be generated too.
