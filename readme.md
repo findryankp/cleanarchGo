@@ -48,7 +48,7 @@ go run . init
 4. Set `.env` with your own configuration database
 <div align="left">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/04.png" alt="Logo" width="60%">
+    <img src="images/04.png" alt="Logo" width="40%">
   </a>
 </div>
 
