@@ -41,7 +41,7 @@ go run . init
 * etc
 <div align="left">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/02.png" alt="Logo" height="250" width="500">
+    <img src="images/02.png" alt="Logo" width="60%">
   </a>
 </div>  
 <br/>
