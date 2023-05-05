@@ -22,7 +22,7 @@ for example :
   </a>
 </div>
 
-2. Run this syntax in cmd/terminal
+2. Run this syntax in cmd/ terminal
 ```shell
 go run . init
 ```
