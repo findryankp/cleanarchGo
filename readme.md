@@ -61,7 +61,7 @@ go run . features featuresNames
 ```
 ex : go run . features room
 
-* All layer, route, and migratiton feature from your featureNames will be created
+* CRUD Features, Code all layer, route, and migratiton feature from your featureNames will be created
 <div align="left">
   <a href="https://github.com/othneildrew/Best-README-Template">
     <img src="images/03.png" alt="Logo" width="30%">
