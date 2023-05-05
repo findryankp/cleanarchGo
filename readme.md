@@ -64,7 +64,7 @@ ex : go run . features room
 * All layer, route, and migratiton feature from your featureNames will be created
 <div align="left">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/03.png" alt="Logo" width="50%">
+    <img src="images/03.png" alt="Logo" width="30%">
   </a>
 </div>
 
