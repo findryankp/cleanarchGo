@@ -1,6 +1,6 @@
 # cleanarchGo
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="images/logo.png">
     <img src="images/logo.png" alt="Logo" width="40%">
   </a>
 </div>
