@@ -34,23 +34,17 @@ go run . init
 ```
 <div align="left">
   <a href="images/init.png">
-    <img src="images/init.gif" alt="Logo" width="100%">
+    <img src="images/init.gif" alt="Logo" width="60%">
   </a>
 </div>
 
-3. If success, the files that will be generated are :
-* configs database
-* middlewares (jwt auth, logs, cors)
-* environment (local.env)
-* etc
-<div align="left">
-  <a href="images/02.png">
-    <img src="images/02.png" alt="Logo" width="60%">
-  </a>
-</div>  
-<br/>
+* If success, the files that will be generated are :
+- [x] configs database
+- [x] middlewares (jwt auth, logs, cors)
+- [x] environment (local.env)
+- [x] etc
 
-4. Set `.env` with your own configuration database
+3. Set `local.env` with your own configuration database
 <div align="left">
   <a href="images/04.png">
     <img src="images/04.png" alt="Logo" width="40%">
@@ -67,7 +61,7 @@ go run . features featuresNames
 * CRUD Features, Code all layer, route, and migratiton feature from your featureNames will be created
 <div align="left">
   <a href="images/feature.png">
-    <img src="images/feature.gif" alt="Logo" width="100%">
+    <img src="images/feature.gif" alt="Logo" width="60%">
   </a>
 </div>
 
