@@ -32,6 +32,11 @@ cleanarchGo.Init();
 ```shell
 go run . init
 ```
+<div align="left">
+  <a href="images/init.png">
+    <img src="images/init.gif" alt="Logo" width="100%">
+  </a>
+</div>
 
 3. If success, the files that will be generated are :
 * configs database
@@ -61,8 +66,8 @@ go run . features featuresNames
 
 * CRUD Features, Code all layer, route, and migratiton feature from your featureNames will be created
 <div align="left">
-  <a href="images/03.png">
-    <img src="images/03.png" alt="Logo" width="30%">
+  <a href="images/feature.png">
+    <img src="images/feature.gif" alt="Logo" width="100%">
   </a>
 </div>
 
