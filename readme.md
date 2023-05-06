@@ -6,10 +6,10 @@
 </div>
 
 ## 💫 About
-Clean architecture starter pack for feature creation to make it faster and easier with Go.
-* Clean Architecture with Echo framework, Gorm, Viper (env), Govalidator, Jwt, etc.
-* Make CRUD new feature less than 1 minutes.
-* Dockerfile will be generated too.
+Clean architecture starter pack for faster and easier feature creation using Go.
+* This pack includes Clean Architecture with the Echo framework, Gorm, Viper (env), Govalidator, Jwt, and more. 
+* You can create CRUD features in less than one minute
+* Dockerfile will also be generated too.
 
 ## 🚀 Import
 ```shell
