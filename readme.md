@@ -23,7 +23,7 @@ cleanarchGo.Init();
 ```
 * for example :
 <div align="left">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="images/01.png">
     <img src="images/01.png" alt="Logo" width="40%">
   </a>
 </div>
@@ -39,7 +39,7 @@ go run . init
 * environment (local.env)
 * etc
 <div align="left">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="images/02.png">
     <img src="images/02.png" alt="Logo" width="60%">
   </a>
 </div>  
@@ -47,7 +47,7 @@ go run . init
 
 4. Set `.env` with your own configuration database
 <div align="left">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="images/04.png">
     <img src="images/04.png" alt="Logo" width="40%">
   </a>
 </div>
@@ -61,7 +61,7 @@ go run . features featuresNames
 
 * CRUD Features, Code all layer, route, and migratiton feature from your featureNames will be created
 <div align="left">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="images/03.png">
     <img src="images/03.png" alt="Logo" width="30%">
   </a>
 </div>
@@ -73,7 +73,7 @@ go run .
 
 * try with your postman or another
 <div align="left">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="images/05.png">
     <img src="images/05.png" alt="Logo" width="60%">
   </a>
 </div>
