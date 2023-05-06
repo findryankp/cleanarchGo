@@ -19,13 +19,14 @@ func requestCreate(featuresName string) {
 
 func requestContent(featuresName string) string {
 	TitleCase := generates.ToTitle(featuresName)
+	lowerCase := generates.ToLower(featuresName)
 
 	var text = `package delivery
 
 import "` + generates.ModuleName + `/features/` + featuresName + `"
 
 type Request struct {
-	` + TitleCase + ` string ` + "`json:" + `"` + featuresName + `" ` + "form:" + `"` + featuresName + `"` + "`" + `
+	` + TitleCase + ` string ` + "`json:" + `"` + lowerCase + `" ` + "form:" + `"` + lowerCase + `"` + "`" + `
 }
 
 func RequestToCore(request *Request) ` + featuresName + `.Core {
