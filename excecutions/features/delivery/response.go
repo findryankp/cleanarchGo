@@ -19,6 +19,7 @@ func responseCreate(featuresName string) {
 
 func responseContent(featuresName string) string {
 	TitleCase := generates.ToTitle(featuresName)
+	lowerCase := generates.ToLower(featuresName)
 
 	var text = `package delivery
 
@@ -26,7 +27,7 @@ import "` + generates.ModuleName + `/features/` + featuresName + `"
 
 type Response struct {
 	Id       uint   ` + "`json:" + `"id"` + "`" + `
-	` + TitleCase + ` string ` + "`json:" + `"` + featuresName + `"` + "`" + `
+	` + TitleCase + ` string ` + "`json:" + `"` + lowerCase + `"` + "`" + `
 }
 
 func CoreToResponse(dataCore ` + featuresName + `.Core) Response {
