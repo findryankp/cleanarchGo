@@ -61,7 +61,7 @@ go run . features featuresNames
 * CRUD Features, Code all layer, route, and migratiton feature from your featureNames will be created
   
 <details>
-  <summary>🔗 featureNames Routes</summary>
+*  <summary>🔗 featureNames Routes</summary>
   
 | Method      | Endpoint            | Params      | JWT Token   | Function                                |
 | ----------- | ------------------- | ----------- | ----------- | --------------------------------------- |
