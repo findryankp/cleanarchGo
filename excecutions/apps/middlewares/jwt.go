@@ -25,7 +25,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/golang-jwt/jwt/v4"
+	"github.com/golang-jwt/jwt/v5"
 	echojwt "github.com/labstack/echo-jwt/v4"
 	"github.com/labstack/echo/v4"
 )
@@ -44,7 +44,7 @@ func JWTMiddleware() echo.MiddlewareFunc {
 }
 
 func CreateToken(userId int, role string) (string, error) {
-	expirationTime := jwt.NewNumericDate(time.Now().Add(time.Hour * 72))
+	expirationTime := jwt.NewNumericDate(time.Now().Add(time.Hour * 2))
 	claims := &JwtCustomClaims{
 		Id:   userId,
 		Role: role,
@@ -72,6 +72,10 @@ func TrimPrefixHeaderToken(reqToken string) string {
 func ValidateToken(c echo.Context) error {
 	reqToken := c.Request().Header.Get("Authorization")
 	tokenString := TrimPrefixHeaderToken(reqToken)
+
+	if !strings.HasPrefix(reqToken, "Bearer") {
+		return errors.New("request does not contain a valid token")
+	}
 
 	if tokenString == "" {
 		return errors.New("request does not contain a valid token")
