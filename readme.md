@@ -44,7 +44,7 @@ go get -u github.com/Findryankp/cleanarchGo@latest
 cleanarchGo.Init();
 ```
 * for example :
-<div align="left">
+<div align="center">
   <a href="images/01.png">
     <img src="images/01.png" alt="Logo" width="40%">
   </a>
@@ -54,7 +54,7 @@ cleanarchGo.Init();
 ```shell
 go run . init
 ```
-<div align="left">
+<div align="center">
   <a href="images/init.png">
     <img src="images/init.gif" alt="Logo" width="60%">
   </a>
@@ -67,7 +67,7 @@ go run . init
 - [x] etc
 
 3. Set `local.env` with your own configuration database
-<div align="left">
+<div align="center">
   <a href="images/04.png">
     <img src="images/04.png" alt="Logo" width="40%">
   </a>
@@ -94,7 +94,7 @@ go run . features featuresNames
 | DELETE       | /featureNames   | id    | NO          | Delete featureNames |
 </details>
 
-<div align="left">
+<div align="center">
   <a href="images/feature.png">
     <img src="images/feature.gif" alt="Logo" width="60%">
   </a>
@@ -106,7 +106,7 @@ go run .
 ```
 
 * try with your postman or another
-<div align="left">
+<div align="center">
   <a href="images/05.png">
     <img src="images/05.png" alt="Logo" width="60%">
   </a>
