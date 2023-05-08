@@ -9,7 +9,7 @@
 Clean architecture starter pack for faster and easier feature creation using Go.
 * This pack includes Clean Architecture with the Echo framework, Gorm, Viper (env), Govalidator, Jwt, and more. 
 * You can create CRUD features in less than one minute
-* Dockerfile will also be generated too.
+* User Auth, `.gitignore` , `Dockerfile` will also be generated too.
 
 ## 🚀 Import
 ```shell
@@ -59,6 +59,19 @@ go run . features featuresNames
 * ex : `go run . features rooms`
 
 * CRUD Features, Code all layer, route, and migratiton feature from your featureNames will be created
+  
+<details>
+  <summary>🔗 featureNames Routes</summary>
+  
+| Method      | Endpoint            | Params      | JWT Token   | Function                                |
+| ----------- | ------------------- | ----------- | ----------- | --------------------------------------- |
+| POST        | /featureNames              | -           | NO          | Post a featureNames as a host                    |
+| GET         | /featureNames   | -    | NO          | Get All Available your featureNames  |
+| GET         | /featureNames   | id    | NO          | Get featureNames Detail |
+| PUT         | /featureNames   | id    | NO          | Edit featureNames |
+| DELETE       | /featureNames   | id    | NO          | Delete featureNames |
+</details>
+
 <div align="left">
   <a href="images/feature.png">
     <img src="images/feature.gif" alt="Logo" width="60%">
