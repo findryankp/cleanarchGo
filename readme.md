@@ -17,7 +17,7 @@ go get -u github.com/Findryankp/cleanarchGo@latest
 ```
 
 ## 👨🏽‍💻 Step By Step
-1. First step, add this syntax to your `main function`
+1. First step, add this syntax to your `main function` in file `main.go`
 ```go
 cleanarchGo.Init();
 ```

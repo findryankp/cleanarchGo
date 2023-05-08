@@ -9,11 +9,6 @@ import (
 )
 
 func InitFeatures(featureName string) {
-	packagesInstall := []string{
-		"github.com/go-playground/validator/v10",
-	}
-	generates.PackageIntallList(packagesInstall)
-
 	createFolderFeature(featureName)
 	entityCreate(featureName)
 
