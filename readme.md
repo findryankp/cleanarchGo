@@ -9,30 +9,26 @@
 Clean architecture starter pack for faster and easier feature creation using Go.
 * This pack includes Clean Architecture with the Echo framework, Gorm, Viper (env), Govalidator, Jwt, and more. 
 * You can create CRUD features in less than one minute
-* User Auth, `.gitignore` , `Dockerfile` will also be generated too.
-
-* <details>
+* `.gitignore` , `Dockerfile` will also be generated too.
+* Auth feature will also generated are :
+<details>
  <summary>🔗 Auth Routes</summary>
-  
-| Method      | Endpoint            | Params      | JWT Token   | Function                                |
-| ----------- | ------------------- | ----------- | ----------- | --------------------------------------- |
-| POST        | /featureNames              | -           | NO          | Post a featureNames as a host                    |
-| GET         | /featureNames   | -    | NO          | Get All Available your featureNames  |
-| GET         | /featureNames   | id    | NO          | Get featureNames Detail |
-| PUT         | /featureNames   | id    | NO          | Edit featureNames |
-| DELETE       | /featureNames   | id    | NO          | Delete featureNames |
+  | Method      | Endpoint            | Params      | JWT Token   | Function                                |
+  | ----------- | ------------------- | ----------- | ----------- | --------------------------------------- |
+  | POST        | /login            | -    | NO          | Login User  |
+  | POST        | /register         | -    | NO          | Register User  |
+  | POST        | /change-password  | -    | YES         | Change Password |
+  | GET         | /claim-token      | -    | YES         | Get Token Data |
 </details>
 
-* <details>
+<details>
  <summary>🔗 User Routes</summary>
-  
-| Method      | Endpoint            | Params      | JWT Token   | Function                                |
-| ----------- | ------------------- | ----------- | ----------- | --------------------------------------- |
-| POST        | /featureNames              | -           | NO          | Post a featureNames as a host                    |
-| GET         | /featureNames   | -    | NO          | Get All Available your featureNames  |
-| GET         | /featureNames   | id    | NO          | Get featureNames Detail |
-| PUT         | /featureNames   | id    | NO          | Edit featureNames |
-| DELETE       | /featureNames   | id    | NO          | Delete featureNames |
+  | Method      | Endpoint            | Params      | JWT Token   | Function                                |
+  | ----------- | ------------------- | ----------- | ----------- | --------------------------------------- |
+  | GET         | /users   | -     | NO          | Get All Users  |
+  | GET         | /users   | id    | NO          | Get User By Id |
+  | PUT         | /users   | id    | NO          | Edit User |
+  | DELETE       | /users  | id    | NO          | Delete user |
 </details>
 
 ## 🚀 Import
