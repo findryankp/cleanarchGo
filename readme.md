@@ -10,7 +10,7 @@ Clean architecture starter pack for faster and easier feature creation using Go.
 * This pack includes Clean Architecture with the Echo framework, Gorm, Viper (env), Govalidator, Jwt, and more. 
 * You can create CRUD features in less than one minute
 * `.gitignore` , `Dockerfile` will also be generated too.
-* Auth feature will also generated are :
+* Auth feature and users feature will also generated :
 <details>
 <summary>🔗 Auth Routes</summary>
   
@@ -23,7 +23,7 @@ Clean architecture starter pack for faster and easier feature creation using Go.
 </details>
 
 <details>
-<summary>🔗 Auth Routes</summary>
+<summary>🔗 Users Routes</summary>
   
 | Method      | Endpoint            | Params      | JWT Token   | Function                                |
 | ----------- | ------------------- | ----------- | ----------- | --------------------------------------- |
