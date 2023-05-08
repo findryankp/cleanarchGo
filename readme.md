@@ -11,6 +11,30 @@ Clean architecture starter pack for faster and easier feature creation using Go.
 * You can create CRUD features in less than one minute
 * User Auth, `.gitignore` , `Dockerfile` will also be generated too.
 
+* <details>
+ <summary>🔗 Auth Routes</summary>
+  
+| Method      | Endpoint            | Params      | JWT Token   | Function                                |
+| ----------- | ------------------- | ----------- | ----------- | --------------------------------------- |
+| POST        | /featureNames              | -           | NO          | Post a featureNames as a host                    |
+| GET         | /featureNames   | -    | NO          | Get All Available your featureNames  |
+| GET         | /featureNames   | id    | NO          | Get featureNames Detail |
+| PUT         | /featureNames   | id    | NO          | Edit featureNames |
+| DELETE       | /featureNames   | id    | NO          | Delete featureNames |
+</details>
+
+* <details>
+ <summary>🔗 User Routes</summary>
+  
+| Method      | Endpoint            | Params      | JWT Token   | Function                                |
+| ----------- | ------------------- | ----------- | ----------- | --------------------------------------- |
+| POST        | /featureNames              | -           | NO          | Post a featureNames as a host                    |
+| GET         | /featureNames   | -    | NO          | Get All Available your featureNames  |
+| GET         | /featureNames   | id    | NO          | Get featureNames Detail |
+| PUT         | /featureNames   | id    | NO          | Edit featureNames |
+| DELETE       | /featureNames   | id    | NO          | Delete featureNames |
+</details>
+
 ## 🚀 Import
 ```shell
 go get -u github.com/Findryankp/cleanarchGo@latest
