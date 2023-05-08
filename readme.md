@@ -56,7 +56,7 @@ go run . init
 ```
 <div align="center">
   <a href="images/init.png">
-    <img src="images/init.gif" alt="Logo" width="60%">
+    <img src="images/init.gif" alt="Logo" width="70%">
   </a>
 </div>
 
@@ -96,7 +96,7 @@ go run . features featuresNames
 
 <div align="center">
   <a href="images/feature.png">
-    <img src="images/feature.gif" alt="Logo" width="60%">
+    <img src="images/feature.gif" alt="Logo" width="70%">
   </a>
 </div>
 
