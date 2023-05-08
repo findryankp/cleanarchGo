@@ -12,23 +12,25 @@ Clean architecture starter pack for faster and easier feature creation using Go.
 * `.gitignore` , `Dockerfile` will also be generated too.
 * Auth feature will also generated are :
 <details>
- <summary>🔗 Auth Routes</summary>
-  | Method      | Endpoint            | Params      | JWT Token   | Function                                |
-  | ----------- | ------------------- | ----------- | ----------- | --------------------------------------- |
-  | POST        | /login            | -    | NO          | Login User  |
-  | POST        | /register         | -    | NO          | Register User  |
-  | POST        | /change-password  | -    | YES         | Change Password |
-  | GET         | /claim-token      | -    | YES         | Get Token Data |
+<summary>🔗 Auth Routes</summary>
+  
+| Method      | Endpoint            | Params      | JWT Token   | Function                                |
+| ----------- | ------------------- | ----------- | ----------- | --------------------------------------- |
+| POST        | /login            | -    | NO          | Login User  |
+| POST        | /register         | -    | NO          | Register User  |
+| POST        | /change-password  | -    | YES         | Change Password |
+| GET         | /claim-token      | -    | YES         | Get Token Data |
 </details>
 
 <details>
- <summary>🔗 User Routes</summary>
-  | Method      | Endpoint            | Params      | JWT Token   | Function                                |
-  | ----------- | ------------------- | ----------- | ----------- | --------------------------------------- |
-  | GET         | /users   | -     | NO          | Get All Users  |
-  | GET         | /users   | id    | NO          | Get User By Id |
-  | PUT         | /users   | id    | NO          | Edit User |
-  | DELETE       | /users  | id    | NO          | Delete user |
+<summary>🔗 Auth Routes</summary>
+  
+| Method      | Endpoint            | Params      | JWT Token   | Function                                |
+| ----------- | ------------------- | ----------- | ----------- | --------------------------------------- |
+| GET         | /users   | -     | NO          | Get All Users  |
+| GET         | /users   | id    | NO          | Get User By Id |
+| PUT         | /users   | id    | NO          | Edit User |
+| DELETE       | /users  | id    | NO          | Delete user |
 </details>
 
 ## 🚀 Import
@@ -81,7 +83,7 @@ go run . features featuresNames
 * CRUD Features, Code all layer, route, and migratiton feature from your featureNames will be created
   
 <details>
-*  <summary>🔗 featureNames Routes</summary>
+<summary>🔗 featureNames Routes</summary>
   
 | Method      | Endpoint            | Params      | JWT Token   | Function                                |
 | ----------- | ------------------- | ----------- | ----------- | --------------------------------------- |
