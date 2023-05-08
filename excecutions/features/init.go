@@ -5,15 +5,11 @@ import (
 	"github.com/Findryankp/cleanarchGo/excecutions/features/data"
 	"github.com/Findryankp/cleanarchGo/excecutions/features/delivery"
 	"github.com/Findryankp/cleanarchGo/excecutions/features/service"
+	"github.com/Findryankp/cleanarchGo/excecutions/features/users"
 	"github.com/Findryankp/cleanarchGo/excecutions/generates"
 )
 
 func InitFeatures(featureName string) {
-	packagesInstall := []string{
-		"github.com/go-playground/validator/v10",
-	}
-	generates.PackageIntallList(packagesInstall)
-
 	createFolderFeature(featureName)
 	entityCreate(featureName)
 
@@ -21,6 +17,7 @@ func InitFeatures(featureName string) {
 	delivery.InitDelivery(featureName)
 	service.InitService(featureName)
 	additions.InitAdditions(featureName)
+	users.InitUsers()
 }
 
 func createFolderFeature(featuresName string) {
