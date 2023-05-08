@@ -1,10 +1,10 @@
 package users
 
 import (
-	"github.com/Findryankp/cleanarchGo/excecutions/apps/routes"
 	"github.com/Findryankp/cleanarchGo/excecutions/features/additions"
 	"github.com/Findryankp/cleanarchGo/excecutions/features/users/data"
 	"github.com/Findryankp/cleanarchGo/excecutions/features/users/delivery"
+	"github.com/Findryankp/cleanarchGo/excecutions/features/users/routes"
 	"github.com/Findryankp/cleanarchGo/excecutions/features/users/service"
 	"github.com/Findryankp/cleanarchGo/excecutions/generates"
 )
@@ -21,8 +21,8 @@ func InitUsers() {
 	data.InitData()
 	delivery.InitDelivery()
 	service.InitService()
-	routes.InitRoutes()
 	additions.InitAdditions("users")
+	routes.UserRoutesCreate()
 }
 
 func createFolderFeature() {

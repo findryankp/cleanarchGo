@@ -6,7 +6,8 @@ import (
 	"github.com/Findryankp/cleanarchGo/excecutions/generates"
 )
 
-func routesCreate() {
+func UserRoutesCreate() {
+	generates.FilesDelete("./apps/routes/usersRouter.go")
 	file, err := generates.FilesCreate("./apps/routes/usersRouter.go")
 	if err != nil {
 		fmt.Println(err.Error())

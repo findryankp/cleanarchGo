@@ -2,6 +2,7 @@ package generates
 
 import (
 	"errors"
+	"fmt"
 	"os"
 )
 
@@ -25,4 +26,12 @@ func FileCreateList(fileNames []string) {
 
 func FilesAddContent(file *os.File, content string) {
 	file.WriteString(content)
+}
+
+func FilesDelete(filename string) {
+	if _, err := os.Stat(filename); err == nil {
+		err = os.Remove(filename)
+	}
+
+	fmt.Println("file does'n exist")
 }
