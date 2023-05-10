@@ -87,7 +87,7 @@ go run . features featuresNames
   
 | Method      | Endpoint            | Params      | JWT Token   | Function                                |
 | ----------- | ------------------- | ----------- | ----------- | --------------------------------------- |
-| POST        | /featureNames              | -           | NO          | Post a featureNames as a host                    |
+| POST        | /featureNames              | -           | NO          | Create new featureNames          |
 | GET         | /featureNames   | -    | NO          | Get All Available your featureNames  |
 | GET         | /featureNames   | id    | NO          | Get featureNames Detail |
 | PUT         | /featureNames   | id    | NO          | Edit featureNames |
