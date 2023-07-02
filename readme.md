@@ -35,7 +35,7 @@ Clean architecture starter pack for faster and easier feature creation using Go.
 
 ## 🚀 Import
 ```shell
-go get -u github.com/Findryankp/cleanarchGo@latest
+go get -u github.com/findryankp/cleanarchGo@latest
 ```
 
 ## 👨🏽‍💻 Step By Step
