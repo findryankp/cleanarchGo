@@ -11,56 +11,50 @@ import (
 
 func Init() error {
 	var argsRaw = os.Args
-	if len(argsRaw) >= 2 {
-		Command(argsRaw)
-		return errors.New("run command finish")
+	if len(argsRaw) < 2 {
+		return nil
 	}
 
-	return nil
-}
-
-func Command(argsRaw []string) {
-	args := []string{
-		"features", "init",
+	args := map[string]bool{
+		"init":           CommandInit(),
+		"features":       CommandFeature(argsRaw),
+		"featwithstruct": CommandInit(),
 	}
 
-	flag := false
-	for _, v := range args {
-		if v == argsRaw[1] {
-			ExcecutionArgument(argsRaw)
-			flag = true
+	if v, ok := args[argsRaw[1]]; ok {
+		if v {
+			return errors.New("run command finish")
 		}
-	}
-
-	if !flag {
+	} else {
 		commands.Menu()
 	}
+
+	return errors.New("run command finish")
+
 }
 
-func ExcecutionArgument(arg []string) {
-	if arg[1] == "features" {
-		CommandFeature(arg)
-	} else if arg[1] == "init" {
-		CommandInit()
-	}
-}
-
-func CommandFeature(arg []string) {
-	if len(arg) != 3 {
-		fmt.Println("wrong argument")
-	} else {
-		if arg[2][0] >= 97 && arg[2][0] <= 122 {
-			commands.Loading()
-			excecutions.NewFeatures(arg[2])
-			commands.Feature()
-		} else {
-			fmt.Println("make feature with lowercase first")
-		}
-	}
-}
-
-func CommandInit() {
+func CommandInit() bool {
 	commands.Loading()
 	excecutions.CommandInit()
 	commands.Init()
+
+	return true
+}
+
+func CommandFeature(arg []string) bool {
+	if len(arg) != 3 {
+		fmt.Println("[COMMAND] - wrong argument (ex: go run . features books)")
+		return false
+	}
+
+	if arg[2][0] >= 97 && arg[2][0] <= 122 {
+		commands.Loading()
+		excecutions.NewFeatures(arg[2])
+		commands.Feature()
+		return true
+	}
+
+	fmt.Println("[COMMAND] - make feature with lowercase first (ex: go run . features books)")
+
+	return false
 }

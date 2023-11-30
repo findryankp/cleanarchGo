@@ -32,7 +32,7 @@ func Feature() {
 	fmt.Printf("\n\n")
 	fmt.Println("------------- FINISH ---------------")
 	fmt.Println("------------------------------------")
-	fmt.Println("|   Feature Created                |")
+	fmt.Println("|   		Feature Created         |")
 	fmt.Println("------------------------------------")
 }
 
@@ -41,7 +41,7 @@ func Init() {
 	fmt.Printf("\n\n")
 	fmt.Println("------------- FINISH ---------------")
 	fmt.Println("------------------------------------")
-	fmt.Println("|   Initialization Success         |")
+	fmt.Println("|   	Initialization Success      |")
 	fmt.Println("------------------------------------")
 }
 
@@ -52,5 +52,7 @@ func Menu() {
 	fmt.Println("------------------------------------")
 	fmt.Println(`| 1. "init" for init project       |`)
 	fmt.Println(`| 2. "features" for create feature |`)
+	fmt.Println(`| 3. "featwithstruct" for create 
+					   feature with initial struct  |`)
 	fmt.Println("------------------------------------")
 }
