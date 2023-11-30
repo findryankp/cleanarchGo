@@ -58,3 +58,18 @@ func CommandFeature(arg []string) bool {
 
 	return false
 }
+
+func CommandFeatureWithStruct(features string, structString string) bool {
+	commands.Loading()
+	excecutions.NewFeaturesWithStruct(features, structString)
+	commands.Feature()
+
+	return false
+}
+
+var data = `
+	type Books struct {
+		Id    uint
+		Class string
+	}
+`

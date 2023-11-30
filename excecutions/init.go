@@ -22,3 +22,7 @@ func NewFeatures(featuresName string) {
 	generates.InitModule()
 	features.InitFeatures(featuresName)
 }
+
+func NewFeaturesWithStruct(featuresName string, structString string) {
+	features.InitFeatures(featuresName)
+}

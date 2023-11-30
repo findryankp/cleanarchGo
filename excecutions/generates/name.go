@@ -1,9 +1,12 @@
 package generates
 
-import "strings"
+import (
+	"strings"
+	"unicode"
+)
 
 func ToTitle(featuresName string) string {
-	return strings.Title(strings.ToLower(featuresName))
+	return strings.Map(unicode.ToTitle, featuresName)
 }
 
 func ToLower(featuresName string) string {
